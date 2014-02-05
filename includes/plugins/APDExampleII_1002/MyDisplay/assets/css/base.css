@@ -1,0 +1,7 @@
+/*
+ * SubSystem CSS
+ */
+#plugin-body {
+	border: 3px double #ddd;
+	padding: 20px;
+}

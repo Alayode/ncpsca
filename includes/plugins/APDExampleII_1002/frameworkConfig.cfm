@@ -1,0 +1,10 @@
+<cfset variables.framework=structNew()>
+<cfset variables.framework.applicationKey="APDExampleII">
+<cfset variables.framework.base="/APDExampleII">
+<cfset variables.framework.usingsubsystems=true>
+<cfset variables.framework.defaultSubsystem="admin">
+<cfset variables.framework.action="action">
+<cfset variables.framework.home="main.default">
+<cfset variables.framework.reload="reload">
+<cfset variables.framework.generateSES=false>
+<cfset variables.framework.reloadApplicationOnEveryRequest=true>

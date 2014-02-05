@@ -1,0 +1,11 @@
+/*
+ * Admin css
+ */
+#plugin-admin {
+	border: 1px solid #eee;
+	padding: 15px;
+}
+#plugin-body {
+	border: 1px solid #ff0000;
+	padding: 15px;
+}

@@ -1,0 +1,28 @@
+<plugin>
+<name>APD Example II</name>
+<package>APDExampleII</package>
+<version>1.0</version>
+<provider>Grant Shepert, Meld Solutions Inc.</provider>
+<providerURL>http://www.grantshepert.com/</providerURL>
+<category>Application</category>
+<settings>
+</settings>
+
+<scripts></scripts>
+
+<eventHandlers>
+	<!-- FW/1 handler -->
+	<eventHandler event="onApplicationLoad" component="fw1Adapter" persist="false"/>
+	<!-- Global (plugin) handler -->
+	<eventHandler event="onApplicationLoad" component="events.eventHandler" persist="false"/>
+	<!-- SubSystem-specific handler -->
+	<eventHandler event="onApplicationLoad" component="MyDisplay.events.eventHandler" persist="false"/>
+</eventHandlers>
+
+<displayobjects location="global">
+	<displayobject name="Display Object One" displaymethod="displayOne" component="MyDisplay.display.displayManager" persist="false"/>
+	<displayobject name="Display Object Two" displaymethod="displayTwo" component="MyDisplay.display.displayManager" persist="false"/>
+	<displayobject name="Dynamic Display Object" displaymethod="displayDynamic" component="MyDisplay.display.displayManager" persist="false"/>
+</displayobjects>
+
+</plugin>

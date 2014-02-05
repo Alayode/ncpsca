@@ -1,0 +1,88 @@
+<!-----
+	Chris Samuel
+	Chriss@napw.com
+	nav_custom.cfm
+	
+	############################################
+	
+	Since most front-end developers have limited CFML knowledge at best, we wonft go into how the following code works, wefll just use it to output what we need. You can simply copy and paste the code below into your include or template.
+Create a new include file
+
+Wefll be calling this custom code into the template as an include to make sure itfs portable. Add a file called gnav_custom.cfmh to:
+
+{siteID}/includes/display_objects/custom/nav_custom.cfm
+Set up the feed iterator to look at the Local Index called gNewsh
+
+Paste the following into nav_custom.cfm. While this may look like a lot of code to worry about, the only thing you need to make sure you do is point the iterator at your feed by setting the gnameh attribute to gNews.h
+
+<cfset feed=$.getBean("feed").loadBy(name="News",siteID=$.event("siteid"))>
+<cfset iterator=feed.getIterator()>
+<cfif iterator.hasNext()>
+
+Add your markup and the items youfd like to output using the Mura Scope
+
+Next, use the iterator to loop through your Local Index, pulling out attributes as necessary. Note that since we are creating a single unordered list, we make sure we put the <ul>fs outside the opening and closing <cfloop> tags.
+
+Inside the <cfloop> tags and after the <cfset item=iterator.next()>, wefll add a single <li> with the attributes we want. We use the simple gMura Scopeh syntax to pull out the attributes. Note, since wefre in the iterator, wefll use gitemh instead of other scopes such as gcontenth or guserh.
+
+<cfset feed=$.getBean("feed").loadBy(name="News",siteID=$.event("siteid"))>
+<cfset iterator=feed.getIterator()>
+<cfif iterator.hasNext()>
+
+<cfoutput>
+<h3>Custom Nav</h3>
+<ul class=hnavCustomh>
+<cfloop condition="iterator.hasNext()">
+<cfset item=iterator.next()>
+<li>
+<a href="#item.getURL()#">#item.getMenuTitle()#</a>
+</li>
+</cfloop>
+</ul>
+</cfoutput>
+</cfif>
+
+Create a Component
+
+Create a Component in the Mura Admin that calls nav_custom.cfm using the mura tag. This enables portability within your site, allowing you to place your custom nav as an object within Mura itself.
+
+[mura ]$.dspInclude('display_objects/custom/nav_custom.cfm')[/ mura]
+
+Note: Be sure to remove the spaces in the Mura tags. They've been added to ensure the tags don;t get rendered.
+
+Note: When using the dspInclude method, itfs pathing begins in g/{siteID}/includes/h and all files will be called relative to that.
+Finally...
+
+    Save your component
+    Place your component
+    Edit the homepage in Mura, adding your new component as a Content Object.
+    Load the page to view your results
+
+	
+	
+	
+	
+	----->
+	
+	
+	
+	
+	
+<cfset feed=$.getBean("feed").loadBy(name="News",siteID=$.event("ASPCA"))>
+<cfset iterator=feed.getIterator()>
+<cfif iterator.hasNext()>
+	
+<cfoutput>
+<h3>Custom Nav</h3>
+<ul class=hnavCustomh>
+<cfloop condition="iterator.hasNext()">
+<cfset item=iterator.next()>
+<li>
+<a href="#item.getURL()#">#item.getMenuTitle()#</a>
+</li>
+</cfloop>
+</ul>
+</cfoutput>
+</cfif>
+	
+	

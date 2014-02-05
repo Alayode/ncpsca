@@ -1,0 +1,2 @@
+FreshMedia
+A two-column, fixed-width CSS theme. It features a nice, clean design with a combination of cool and muted colors.

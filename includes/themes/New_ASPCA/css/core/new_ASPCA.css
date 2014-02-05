@@ -1,0 +1,624 @@
+@charset "utf-8";
+/* CSS Document */
+
+// @import url("globalreset.css");
+
+
+body {
+background:url(../images/bg.jpg) top repeat-x #ecedee;
+font-family:Tahoma, Helvetica, Arial, sans-serif;
+}
+
+#wrapper {
+width:960px;
+margin:30px auto;
+background:#fff;
+}
+
+#header {
+height:134px;
+width:960px;
+background:url(../images/bg-head.jpg) no-repeat;
+}
+
+	#head-links {
+	float:left;
+	margin-top:55px;
+	margin-left:790px;
+	color:#fff;
+	font-size:10px;
+	}
+	
+	#head-links a {
+	text-decoration:none;
+	color:#fff;
+	}
+
+#nav {
+width:960px;
+margin-top:0px;
+height:24px;
+background:url(../images/bg-nav.jpg) repeat-x;
+}
+
+	#nav ul {
+	list-style:none;
+	padding-top:3px;
+	margin-left:6px;
+	display:block;
+	}
+
+	#nav ul li {
+	float:left;
+	margin-left:12px;
+	margin-right:12px;
+	color:#fff;
+	font-size:15px;
+	}
+
+	#nav ul li a {
+	font-size:15px;
+	color:#fff;
+	text-decoration:none;
+	}
+	
+	#nav ul li a:hover {
+	color:#7cc623;
+	}
+	
+#home-left {
+height:582px;
+width:568x;
+background:url(../images/homepage.jpg) top no-repeat #fff;
+float:left;
+}
+
+	#adoptme {
+	float:left;
+	margin-top:455px;
+	width:768px;
+	height:125px;
+	background:url(../images/adoptme.png) left no-repeat;
+	}
+	
+	#adoptme p {
+	margin-left:150px;
+	margin-top:90px;
+	font-size:14px;
+	}
+
+#home-right {
+width:192px;
+height:582px;
+float:left;
+background:#fff;
+}
+
+#footer {
+width:960px;
+height:171px;
+background:url(../images/bg-footer.jpg);
+}
+
+#footer-donate {
+width:960px;
+height:171px;
+background:url(../images/bg-footer-donate.jpg);
+}
+	#donate {
+	float:right;
+	margin-right:30px;
+	margin-top:18px;
+	}
+	
+	#footernav {
+	width:600px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:20px;
+	font-size:11px;
+	text-align:center;
+	}
+	
+		.foot {
+		color:#000;
+		font-size:11px;
+		text-decoration:none;
+		}
+		
+		.foot:hover {
+		color:#fff;
+		}
+		
+		.copy {
+		font-size:10px;
+		display:block;
+		margin-top:3px;
+		line-height:12px;
+		}
+		
+		.bottom {
+		color:#000;
+		font-size:10px;
+		text-decoration:none;
+		}
+		
+		.bottom:hover {
+		color:#fff;
+		}
+
+#clear {
+clear:both;
+}
+
+#leftcol {
+width:480px;
+float:left;
+font-size:11px;
+}
+
+	#leftcol p {
+	margin-top:15px;
+	line-height:14px;
+	}
+	
+	#leftcopy {
+	margin-left:30px;
+	margin-right:30px;
+	}
+	
+	#halfleft {
+	width:210px;
+	float:left;
+	margin-left:30px;
+	}
+	
+	#halfright {
+	width:210px;
+	margin-left:10px;
+	float:left;
+	}
+
+#rightcol {
+width:480px;
+float:left;
+font-size:11px;
+}
+
+	#rightcol p {
+	margin-top:15px;
+	line-height:14px;
+	}
+	
+	#rightcopy {
+	margin-right:30px;
+	}
+
+#quote {
+width:473px;
+height:195px;
+background:url(../images/bg-quote.jpg);
+margin:auto;
+margin-top:10px;
+float:left;
+}
+
+	#quotetext {
+	width:410px;
+	margin:auto;
+	margin-top:30px;
+	}
+
+	.quote {
+	font-size:20px;
+	color:#fff;
+	font-family:"Times New Roman", Times, serif;
+	}
+	
+	.credit {
+	font-size:14px;
+	color:#fff;
+	text-align:right;
+	width:405px;
+	display:block;
+	margin-top:10px;
+	}
+
+#adoption {
+width:830px;
+height:243px;
+background:url(../images/bg-adoption.jpg);
+margin:auto;
+}
+
+	#adoption-inner {
+	width:794px;
+	height:223px;
+	margin-left:27px;
+	overflow-y:scroll;
+	float:left;
+	margin-top:1px;
+	}
+
+#calendar {
+width:440px;
+height:226px;
+background:url(../images/bg-calendar.jpg);
+}
+
+	#calendar-inner	{
+	width:425px;
+	height:219px;
+	margin-top:1px;
+	margin-left:7px;
+	float:left;
+	overflow-y:scroll;
+	}
+
+#faq {
+width:958px;
+height:555px;
+float:left;
+margin-left:1px;
+background:url(../images/bg-faq.jpg);
+}
+
+	#faqleft {
+	width:425px;
+	float:left;
+	margin-left:40px;
+	margin-top:15px;
+	font-size:11px;
+	}
+	
+	#faqright {
+	width:425px;
+	float:left;
+	margin-top:35px;
+	font-size:11px;
+	margin-left:30px;
+	}
+	
+#donations {
+width:958px;
+height:556px;
+margin-left:1px;
+float:left;
+background:url(../images/bg-donations.jpg);
+}
+
+	#donations p {
+	margin-top:15px;
+	line-height:14px;
+	}
+
+	#donationsleft {
+	width:425px;
+	margin-left:40px;
+	margin-top:30px;
+	float:left;
+	font-size:11px;
+	}
+	
+	#donationsright {
+	width:425px;
+	margin-left:30px;
+	margin-top:30px;
+	float:left;
+	font-size:11px;
+	}
+
+h1 {
+font-size:40px;
+color:#f1af00;
+font-family:"Times New Roman", Times, serif;
+font-weight:bold;
+margin-bottom:0px;
+margin-top:20px;
+}
+
+h2 {
+font-size:13px;
+color:#72bf44;
+font-weight:bold;
+margin-bottom:5px;
+}
+
+.green1 {
+font-size:13px;
+color:#72bf44;
+font-weight:bold;
+margin-bottom:5px;
+}
+
+.orange {
+font-weight:bold;
+color:#f1af00;
+}
+
+.blue {
+font-weight:bold;
+color:#5c7bba;
+}
+
+.title {
+font-size:13px;
+color:#72bf44;
+font-weight:bold;
+width:100%;
+display:block;
+margin-bottom:2px;
+}
+
+.green {
+font-size:13px;
+color:#72bf44;
+font-weight:bold;
+width:100%;
+display:block;
+text-align:right;
+}
+
+.black {
+color:#000;
+text-decoration:underline;
+}
+
+.black:hover {
+color:#72bf44;
+}
+
+.fullwidth {
+margin-top:25px;
+}
+
+.answer {
+padding-bottom:15px;
+}
+
+
+/**** SCROLLER ****/
+
+/*
+ * simplyScroll 1.0.3 - a scroll-tastic jQuery plugin
+ *
+ * http://logicbox.net/jquery/simplyscroll
+ * http://logicbox.net/blog/simplyscroll-jquery-plugin
+ * http://plugins.jquery.com/project/simplyScroll
+ *
+ * Copyright (c) 2009 Will Kelly - http://logicbox.net
+ *
+ * Dual licensed under the MIT (MIT-LICENSE.txt)
+ * and GPL (GPL-LICENSE.txt) licenses.
+ *
+ * Last revised: 03/07/2009 21:13
+ *
+ */
+
+/* Default/Master classes 
+
+Example markup format (for horizontal scroller)
+Note all DIVs are generated and should not be hard-coded
+
+<div class="your-custom-class simply-scroll-container">
+	<div class="simply-scroll-btn simply-scroll-btn-left"></div>
+	<div class="simply-scroll-btn simply-scroll-btn-right"></div>
+	<div class="simply-scroll-clip">
+		<ul class="simply-scroll-list">
+			<li>...</li>
+			...
+		</ul>
+	</div>
+</div>
+
+
+*/
+/*
+.simply-scroll-container { /* Container DIV - automatically generated */
+	position: relative;
+}
+
+	.simply-scroll-clip { /* Clip DIV - automatically generated */
+		position: relative;
+		overflow: hidden;
+		z-index: 2;
+	}
+
+	.simply-scroll-list { /* UL/OL/DIV - the element that simplyScroll is inited on */
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+		.simply-scroll-list li {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+	
+		.simply-scroll-list li img {
+			border: none;
+			display: block;
+		}
+	
+	.simply-scroll-btn {
+		position: absolute;
+		z-index:3;
+		cursor: pointer;
+		background:url(../images/buttons.png);
+	}
+	
+	.simply-scroll-btn-left {
+		left: 6px;
+		bottom: 6px;
+		background-position: 0 -44px;
+	}
+	.simply-scroll-btn-left.disabled {
+		background-position: 0 0 !important;
+	}
+	.simply-scroll-btn-left:hover {
+		background-position: 0 -88px;
+	}
+	
+	.simply-scroll-btn-right {
+		right: 6px;
+		bottom: 6px;
+		background-position: 84px -44px;
+	}
+	.simply-scroll-btn-right.disabled {
+		background-position: 84px 0 !important;
+	}
+	.simply-scroll-btn-right:hover {
+		background-position: 84px -88px;
+	}
+	
+	.simply-scroll-btn-up {
+		width:16px;
+		height:11px;
+		background:url(../images/btn-up.jpg);
+		right:20px;
+		top:487px;
+	}
+	.simply-scroll-btn-up.disabled {
+	}
+	.simply-scroll-btn-up:hover {
+		background:url(../images/btn-up-over.jpg);
+	}
+	
+	.simply-scroll-btn-down {
+		right: 6px;
+		top: 10px;
+		width:16px;
+		height:11px;
+		background:url(../images/btn-down.jpg) #000;
+	}
+	.simply-scroll-btn-down.disabled {
+	}
+	.simply-scroll-btn-down:hover {
+		background:url(../images/btn-down-over.jpg);
+	}
+
+/* Custom class modifications - override classees
+
+.simply-scroll is default
+
+*/
+
+.simply-scroll { /* Customisable base class for style override DIV */
+	width: 576px;
+	height: 200px;
+	margin-bottom: 1em;
+}
+
+	.simply-scroll .simply-scroll-clip {
+		width: 576px;
+		height: 200px;
+	}
+	
+		.simply-scroll .simply-scroll-list {}
+		
+		.simply-scroll .simply-scroll-list li {
+			float: left;
+			width: 290px;
+			height: 200px;
+		}
+		.simply-scroll .simply-scroll-list li img {}
+	
+	.simply-scroll .simply-scroll-btn {}
+	
+	.simply-scroll .simply-scroll-btn-left {}
+	.simply-scroll .simply-scroll-btn-left.disabled {}
+	.simply-scroll .simply-scroll-btn-left:hover {}
+	
+	.simply-scroll .simply-scroll-btn-right {}
+	.simply-scroll .simply-scroll-btn-right.disabled {}
+	.simply-scroll .simply-scroll-btn-right:hover {}
+	
+	.simply-scroll .simply-scroll-btn-up {}
+	.simply-scroll .simply-scroll-btn-up.disabled {}
+	.simply-scroll .simply-scroll-btn-up:hover {}
+	
+	.simply-scroll .simply-scroll-btn-down {}
+	.simply-scroll .simply-scroll-btn-down.disabled {}
+	.simply-scroll .simply-scroll-btn-down:hover {}
+	
+
+
+/* Vertical scroller example */
+
+.vert { /* wider than clip to position buttons to side */
+	width: 168px;
+	height: 518px;
+	margin-top:25px;
+	background:url(../images/home-scroll.jpg);
+}
+
+	.vert .simply-scroll-clip {
+		width: 142px;
+		height: 500px;
+		margin-top:5px;
+		margin-left:10px;
+		float:left;
+	}
+	
+		.vert .simply-scroll-list {
+		margin-top:10px;}
+		
+		.vert .simply-scroll-list li {
+			width: 120px;
+			height: 200px;
+			font-size:12px;
+		}
+		.vert .simply-scroll-list li img {}
+	
+	.vert .simply-scroll-btn {}
+
+	.vert .simply-scroll-btn-up { /* modified btn pos */
+		right: 7px;
+		top: 488px;
+	}
+	.vert .simply-scroll-btn-up.disabled {}
+	.vert .simply-scroll-btn-up:hover {}
+	
+	.vert .simply-scroll-btn-down { /* modified btn pos */
+		right: 7px;
+		top: 499px;
+	}
+	.vert .simply-scroll-btn-down.disabled {}
+	.vert .simply-scroll-btn-down:hover {}
+		
+	/* NOTE left-right classes wouldn't be needed on vertical scroller */
+	
+/* Flickr example 
+
+Images created from a data source use simpler format i.e.
+
+<div>
+	<img/>
+	<img/>
+	...
+</div>
+
+*/
+
+.flickr {
+	width: 576px;
+	height: 180px;
+	margin-bottom: 1.5em;
+}
+
+	.flickr .simply-scroll-clip {
+		width: 576px;
+		height: 180px;
+	}
+		
+		.flickr .simply-scroll-list img {
+			float: left;
+			border: none;
+			display: block;
+		}
